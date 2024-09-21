@@ -1,0 +1,84 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+
+  &_right {
+    align-items: flex-end;
+  }
+
+  &_right > .menu__list {
+    align-items: flex-end;
+  }
+
+  @include media-small {
+    gap: 2rem;
+  }
+}
+
+.menu__title {
+  @include h2-title($color-gold);
+  text-transform: capitalize;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  list-style: none;
+
+  @include media-small {
+    gap: 2rem;
+  }
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 5.8rem;
+
+  @include media-small {
+    gap: 3rem;
+  }
+}
+
+.menu__item-name {
+  @include text($color-dark-xl);
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  align-self: start;
+}
+
+.menu__item-container {
+  display: flex;
+  align-items: center;
+  gap: 5.8rem;
+
+  @include media-small {
+    gap: 3rem;
+  }
+}
+
+.menu__item-decor {
+  width: 10rem;
+  height: 0.1rem;
+  display: inline-block;
+  background-color: $color-gold;
+
+  @include media-small {
+    width: 5rem;
+  }
+}
+
+.menu__item-price {
+  display: flex;
+  gap: 6rem;
+  @include text($color-dark-xl);
+  @extend %font-prim;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}

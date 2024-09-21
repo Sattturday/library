@@ -1,0 +1,14 @@
+.about {
+  width: 100%;
+}
+
+.about__title {
+  @include h2-title($color-dark-l);
+  @include title-section;
+}
+
+.about__text {
+  padding: 4rem 0 2rem;
+  @include text($color-dark-xl);
+  text-align: center;
+}

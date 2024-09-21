@@ -1,0 +1,75 @@
+.carousel {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include media-carousel {
+    column-gap: 5.8rem;
+    max-width: 61.4rem;
+  }
+
+  @include media-carousel-s {
+    gap: 1.5rem;
+  }
+
+  @include media-small {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.carousel__wrapper {
+  width: 140rem;
+  overflow: hidden;
+
+  @include media-carousel {
+    width: 45rem;
+  }
+
+  @include media-small {
+    width: 29.5rem;
+  }
+}
+
+.carousel__track {
+  display: flex;
+  margin-left: -1.25rem;
+}
+
+.carousel__item {
+  margin: 0 1.25rem;
+  width: 45rem;
+  aspect-ratio: 1 / 1.24;
+
+  @include media-small {
+    width: 29.5rem;
+  }
+}
+
+.carousel__navigation-wrapper {
+  margin: 3.7rem auto;
+  width: 7.8rem;
+  overflow: hidden;
+
+  @include media-carousel {
+    margin: 2.2rem auto 3.7rem;
+    width: 13rem;
+  }
+}
+
+.carousel__navigation {
+  width: 13rem;
+  display: flex;
+}
+
+.carousel__button-wrapper {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}

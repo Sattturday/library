@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/inter_regular.eot'),
+    url('./fonts/inter_regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/inter_regular.woff2') format('woff2'),
+    url('../vendor/fonts/inter_regular.woff') format('woff'),
+    url('./fonts/inter_regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/inter_bold.eot'),
+    url('./fonts/inter_bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/inter_bold.woff2') format('woff2'),
+    url('../vendor/fonts/inter_bold.woff') format('woff'),
+    url('./fonts/inter_bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/forum_regular.eot'),
+    url('./fonts/forum_regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/forum_regular.woff2') format('woff2'),
+    url('../vendor/fonts/forum_regular.woff') format('woff'),
+    url('./fonts/forum_regular.ttf') format('truetype');
+}

@@ -1,0 +1,128 @@
+.footer {
+  padding-top: 2rem;
+  background-color: $color-dark-l;
+}
+
+.footer__info {
+  padding-bottom: 2.9rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid $color-light-xl;
+
+  @include media-mobile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.footer__column {
+  max-width: 23rem;
+}
+
+.footer__link-map {
+  @include footer-link;
+  @extend %font-add;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.footer__social {
+  margin: 0;
+  padding: 1.8rem 0 0;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  @extend %transition;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &_twit {
+    background-image: url(../assets/icons/twitter.svg);
+  }
+  &_insta {
+    background-image: url(../assets/icons/instagram.svg);
+  }
+  &_fb {
+    background-image: url(../assets/icons/facebook.svg);
+  }
+}
+
+.footer__schedules {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__schedule-item {
+  margin: 0;
+  @extend %font-add;
+  color: $color-light-xl;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  text-align: right;
+  @include disabled;
+
+  @include media-mobile {
+    text-align: left;
+  }
+}
+
+.footer__bottom {
+  padding: 4.4rem 0 2.6rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+
+.footer__bottom-item {
+  width: 20rem;
+  height: 4rem;
+  display: block;
+  @include text($color-light-xl);
+  line-height: 1;
+  letter-spacing: 0.2rem;
+
+  &_author {
+    @include footer-link;
+    text-align: right;
+  }
+
+  &_school {
+    @include footer-link;
+    text-align: center;
+    min-width: 31rem;
+  }
+
+  &_date {
+    @include disabled;
+    width: 15rem;
+  }
+
+  @include media-mobile {
+    display: flex;
+    justify-content: flex-start;
+
+    &_school {
+      order: 1;
+    }
+    &_author {
+      order: 2;
+    }
+    &_date {
+      order: 3;
+    }
+  }
+}

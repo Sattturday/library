@@ -1,0 +1,8 @@
+.logo {
+  text-decoration: none;
+}
+
+.logo__title {
+  margin: 0;
+  @include form-text($color-light-xl);
+}

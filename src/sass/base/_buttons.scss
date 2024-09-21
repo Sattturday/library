@@ -1,0 +1,70 @@
+.carousel__button-arrow {
+  margin-top: 4.2rem;
+  display: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &_left {
+    background-image: url(../assets/icons/Carret_Left.svg);
+  }
+
+  &_right {
+    background-image: url(../assets/icons/Carret_Right.svg);
+  }
+
+  @include media-carousel {
+    display: block;
+  }
+
+  @include media-small {
+    display: none;
+  }
+}
+
+.carousel__button {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: $color-dark-l;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  @extend %transition;
+
+  &_active {
+    background-color: $color-gold;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card__button {
+  margin-bottom: 1.5rem;
+  @include button(7.5rem, 3rem, 1rem);
+
+  &_disable {
+    border: 0.1rem solid $color-gold;
+    color: $color-gold;
+    @include disabled;
+  }
+}
+
+.form__submit {
+  margin: 2rem 0 1.3rem;
+  @include button(24.2rem, 4.4rem, 2rem);
+}
+
+.library-card__get-button {
+  @include button(7.5rem, 3rem, 1rem);
+}

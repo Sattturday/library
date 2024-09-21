@@ -1,0 +1,16 @@
+.wrapper {
+  margin: auto;
+  padding: 0 2rem;
+  position: relative;
+  max-width: $content-width;
+
+  @include media-small {
+    &_welcome {
+      display: flex;
+    }
+  }
+
+  @include media-mobile {
+    padding: 0 1rem;
+  }
+}

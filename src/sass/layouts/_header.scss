@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  background-color: $color-dark-l;
+  padding: 20px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  @include media-small {
+    gap: 2rem;
+  }
+
+  @include media-mobile {
+    gap: 1rem;
+  }
+}

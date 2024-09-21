@@ -1,0 +1,68 @@
+.library-card {
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.library-card__title {
+  @include h2-title($color-dark-l);
+  @include title-section;
+}
+
+.library-card__container {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include media-large {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.library-card__find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.library-card__find-title {
+  @include form-text($color-dark-xl);
+  @extend %font-add;
+  line-height: normal;
+}
+
+.library-card__get {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: flex-end;
+
+  @include media-large {
+    max-width: 55rem;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+.library-card__get-title {
+  @include form-text($color-dark-xl);
+  line-height: normal;
+}
+
+.library-card__get-text {
+  @include text($color-dark-xl);
+  letter-spacing: 0.04rem;
+  text-align: right;
+
+  @include media-large {
+    text-align: center;
+  }
+}
+
+.library-card__get-buttons {
+  display: flex;
+  gap: 2rem;
+}

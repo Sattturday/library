@@ -1,0 +1,27 @@
+.coffee-shop {
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.coffee-shop__title {
+  @include h2-title($color-dark-l);
+  @include title-section;
+}
+
+.coffee-shop__description {
+  padding: 4rem 0;
+  @include text($color-dark-xl);
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.coffee-shop__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include media-medium {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
